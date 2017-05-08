@@ -102,6 +102,7 @@ ENV/
 *.rda
 *.RData
 *.html
+!BestReads.html
 /archive/*
 *.png
 
