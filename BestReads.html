@@ -11787,7 +11787,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="I-am-a-bookworm.">I am a bookworm.<a class="anchor-link" href="#I-am-a-bookworm.">&#182;</a></h3><h4 id="I-read-3-4-books-a-month-(non-fiction-books-only)-and-start-80%-of-my-sentences-with-&quot;I-read-somewhere-that...&quot;">I read 3-4 books a month (non-fiction books only) and start 80% of my sentences with "I read somewhere that..."<a class="anchor-link" href="#I-read-3-4-books-a-month-(non-fiction-books-only)-and-start-80%-of-my-sentences-with-&quot;I-read-somewhere-that...&quot;">&#182;</a></h4><p>This is why I decided to scrape goodreads.com for this web-scrapping project (the second of NYC DataScience Academy Bootcamp). Goodreads.com is the world's largest site for readers and book recommendations. Amazon acquired it in 2013.</p>
+<h3 id="I-am-a-bookworm.">I am a bookworm.<a class="anchor-link" href="#I-am-a-bookworm.">&#182;</a></h3><h4 id="I-read-3-4-books-a-month-(non-fiction-books-only)-and-start-80%-of-my-sentences-with-&quot;I-read-somewhere-that...&quot;">I read 3-4 books a month (non-fiction books only) and start 80% of my sentences with "I read somewhere that..."<a class="anchor-link" href="#I-read-3-4-books-a-month-(non-fiction-books-only)-and-start-80%-of-my-sentences-with-&quot;I-read-somewhere-that...&quot;">&#182;</a></h4><p>This is why I decided to scrape goodreads.com for this web-scraping project (the second of NYC DataScience Academy Bootcamp). Goodreads.com is the world's largest site for readers and book recommendations. Amazon acquired it in 2013.</p>
 <p>For this project, I was interested in analyzing the <strong>common traits of Top 400 books on goodreads.com</strong>, and predicting the success of a book based on its reviews.</p>
 <p>I grabbed data for the books under <a href="https://www.goodreads.com/list/show/1.Best_Books_Ever">'Best Book Ever' list</a>. The list includes more than 48,000 books.</p>
 
@@ -11946,10 +11946,10 @@ div#notebook {
 
 
 
-<div id="5f75571f-2792-487d-99b2-ccbfc06662cf"></div>
+<div id="3855432f-b4d4-4880-80e3-a05726fb3b29"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#5f75571f-2792-487d-99b2-ccbfc06662cf');
+var element = $('#3855432f-b4d4-4880-80e3-a05726fb3b29');
 
 (function(global) {
   function now() {
@@ -12386,7 +12386,7 @@ We will <strong>turn the column <code>TotalScore</code> into a numeric type</str
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The <code>Reviews</code> column requires a little bit more cleaning. We will have to do some <strong>stemming and lemmatization</strong>. First we'll remove any puntuation and replace multiple white spaces with one. We'll take care of the stemming and lemmatization a bit later, when the time comes.</p>
+<p>The <code>Reviews</code> column requires a little bit more cleaning. We will have to do some <strong>stemming and lemmatization</strong> (which we will take care of later). First we'll remove any puntuation and replace multiple white spaces with one.</p>
 
 </div>
 </div>
@@ -12469,7 +12469,7 @@ We will <strong>turn the column <code>TotalScore</code> into a numeric type</str
 <li>Publishing</li>
 <li>Predicting</li>
 </ul>
-<h5 id="The-first-2-parts-will-aim-at-guiding-any-author-BEFORE-he/she-writes-a-book-in-order-to-make-it-to-the-Top-400-list.">The first 2 parts will aim at guiding any author BEFORE he/she writes a book in order to make it to the Top 400 list.<a class="anchor-link" href="#The-first-2-parts-will-aim-at-guiding-any-author-BEFORE-he/she-writes-a-book-in-order-to-make-it-to-the-Top-400-list.">&#182;</a></h5><p>We will answer the following questions:</p>
+<h5 id="The-first-two-parts-aim-at-guiding-an-author-BEFORE-he/she-writes-a-book.">The first two parts aim at guiding an author BEFORE he/she writes a book.<a class="anchor-link" href="#The-first-two-parts-aim-at-guiding-an-author-BEFORE-he/she-writes-a-book.">&#182;</a></h5><p>We will answer the following questions:</p>
 <ul>
 <li>Which genre is most represented in the Top 400 list?</li>
 <li>Is there an optimal number of pages?</li>
@@ -13280,7 +13280,7 @@ We expect the likelihood of a genre in the Top 400 list to be proportional to th
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h5 id="Bringing-in-another-dataset:-our-Control-list">Bringing in another dataset: our Control list<a class="anchor-link" href="#Bringing-in-another-dataset:-our-Control-list">&#182;</a></h5><p>The Top 400 list is meaningless if we can't put it into context by comparing it to the worst 400 list. Unfortunately, there is no such list.</p>
-<p>In the absence of a 'Worst Ever Books' list, we will look at a randon sample of books on goodreads.com.</p>
+<p>In the absence of a 'Worst Ever Books' list, we will look at a random sample of books on goodreads.com.</p>
 <p>As of 2017, goodreads had more than 1.5 billion books. We will scrape a random sample of 10,000 books and apply the exact same data cleaning process as we did for our Top 400 list.</p>
 <p>I won't include the code for this list in this notebook. However, you can find it in the notebook named GoodReads.ipynb.</p>
 
@@ -13678,9 +13678,9 @@ We expect the likelihood of a genre in the Top 400 list to be proportional to th
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The Classics genre is under-represented on goodreads.com. And yet, it is highly represented in the Top 400 list.</p>
-<p>On the other hand, the Fiction, Fantasy and Young Adult genres represent a significant proportion of the books on goodreads.com. Their likelihood of being in the Top 400 is then higher than an under-represented genre like Classics.</p>
-<p>Readers may be more likely to upvote the Classics books. This is a genre a new author would want to consider...</p>
+<p>The Classics genre is underrepresented on goodreads.com. And yet, it is highly represented in the Top 400 list.</p>
+<p>On the other hand, the Fiction, Fantasy and Young Adult genres represent a significant proportion of the books on goodreads.com. Their likelihood of being in the Top 400 is then higher than an underrepresented genre.</p>
+<p>The important insight here is that readers are more likely to upvote books from the Classics genre.</p>
 
 </div>
 </div>
@@ -14138,7 +14138,7 @@ We expect the likelihood of a genre in the Top 400 list to be proportional to th
 <p>Let's analyze any possible trends in year of publication in the Top 400 list.</p>
 <ul>
 <li>First, we will look at a possible correlation with the number of pages. </li>
-<li>We'll then look for a correlation with the number of books solds.</li>
+<li>We'll then look for a correlation with the number of books sold.</li>
 </ul>
 
 </div>
@@ -15640,7 +15640,7 @@ Although some peaks in the average number of pages published coincide with some 
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>We will start our sentiment analysis on the <code>Reviews</code> column using the AFINN dictionary.</p>
 <p>The output of the AFINN method is a float variable (the AFINN score) that, if larger than zero, indicates a positive sentiment and, less than zero, indicates negative sentiment. The scale ranges from -5 to +5.</p>
-<h5 id="Testing-the-Afinn-method-on-the-Control-list-first">Testing the Afinn method on the Control list first<a class="anchor-link" href="#Testing-the-Afinn-method-on-the-Control-list-first">&#182;</a></h5><p>We need a method that has a high level of granularity to be able to identify which words can predict a book's ranking in the Top 400 list. Before applying the Afinn method to the Top 400 list, we will check its reliability on a braoder list, i.e. the Control list.</p>
+<h5 id="Testing-the-Afinn-method-on-the-Control-list-first">Testing the Afinn method on the Control list first<a class="anchor-link" href="#Testing-the-Afinn-method-on-the-Control-list-first">&#182;</a></h5><p>We need a method that has a high level of granularity to be able to identify which words can predict a book's ranking in the Top 400 list. Before applying the Afinn method to the Top 400 list, we will check its reliability on a broader list, i.e. the Control list.</p>
 
 </div>
 </div>
@@ -16142,7 +16142,7 @@ Although some peaks in the average number of pages published coincide with some 
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Although the Afinn method works for a broader list, it is not granular enough to predict ranking in our Top 400 list (where all the books are successful by definition).</p>
-<p>The graph below offers the same insight as the boxplot for our Top 400. We are using a continous variable (the score) instead of a discrete one (the ranking category).</p>
+<p>The graph below offers the same insights as the boxplot for our Top 400. We are using a continuous variable (the score) instead of a discrete one (the ranking category).</p>
 
 </div>
 </div>
@@ -16345,10 +16345,10 @@ Although some peaks in the average number of pages published coincide with some 
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>In the scatterplot above, the sentiment score does not go below -1.5. This makes sense as we don't expect the 'Best Ever' Books to have highly negative sentiment score (i.e -3, -4 or -5). However there’s still a small amount of prediction error; some Top 100 books have a negative sentiment score.</p>
+<p>In the scatterplot above, the sentiment scores do not go below -1.5. This makes sense as we don't expect the 'Best Ever' Books to have highly negative sentiment score (i.e -3, -4 or -5). However there’s still a small amount of prediction error; some Top 100 books have a negative sentiment score.</p>
 <p>In order to predict the ranking of a book within the Top 400 list, we need to be more granular:</p>
 <ul>
-<li>Instead of looking at the overall score for the reviews, we will analyze each word within the review and how its Afinn score and it frequency can predict the ranking of a book.</li>
+<li>Instead of looking at the overall score for the reviews, we will analyze each word within the review and how its Afinn score and frequency can predict the ranking of a book.</li>
 <li>We will also look at another library, the Vader lexicon, which offers more granularity.</li>
 </ul>
 
@@ -16360,7 +16360,7 @@ Although some peaks in the average number of pages published coincide with some 
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Looking-at-individual-positive-and-negative-words-and-how-they-impact-a-book's-ranking">Looking at individual positive and negative words and how they impact a book's ranking<a class="anchor-link" href="#Looking-at-individual-positive-and-negative-words-and-how-they-impact-a-book's-ranking">&#182;</a></h4>
+<h4 id="Looking-at-individual-positive-and-negative-words-and-how-they-predict-a-book's-ranking">Looking at individual positive and negative words and how they predict a book's ranking<a class="anchor-link" href="#Looking-at-individual-positive-and-negative-words-and-how-they-predict-a-book's-ranking">&#182;</a></h4>
 </div>
 </div>
 </div>
@@ -16940,7 +16940,7 @@ Although some peaks in the average number of pages published coincide with some 
 <li>compound: Compound (i.e. aggregated score computed by summing the valence scores of each word in the reviews, adjusted according to the Vader rules, and then normalized to be between -1 (most extreme negative) and +1 (most extreme positive))</li>
 </ul>
 <p>Let's analyze the reliability of the Vader lexicon at predicting the ranking of a book in the Top 400 list.</p>
-<p>We will need to make quite a few adjustements to our dataframe first in order to have the four Vader's classes of sentiments in four different columns.</p>
+<p>We will need to make quite a few adjustments to our data frame first in order to have the four Vader's classes of sentiments in four different columns.</p>
 
 </div>
 </div>
@@ -21793,15 +21793,15 @@ Pearson's r can range from -1 to 1 with:</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Our analysis suggested that an author who wants to make it to the Top 400 list should prefer the Classics genre over other popular genres such as Fiction.</p>
-<p>There was no clear pattern indicating a preferred year of publication or number of pages, although most of the Top 400 books average 300 pages.</p>
-<p>The number of reviews help predict the success of a book: the more, the better. However, it does not help differentiate the four-star from the five-star books.</p>
-<p>Finally, the sentiment analysis part was unsuccessful at predicting the success of a book within the Top 400 list. The Afinn and Vader methods helped predict the likelihood of a high score on goodreads.com. However once a book makes it to the Top 400 list and a high level of granularity is required to differentiate it from other successful books and predict its rank, the two methods were unreliable.</p>
+<p>Our analysis reveals that the Classics genre is the most upvoted.</p>
+<p>There is no clear pattern indicating a preferred year of publication or number of pages, although most of the Top 400 books average 300 pages.</p>
+<p>The number of reviews is a good predictor of success: the more, the better. However, it does not help differentiate the four-star from the five-star books.</p>
+<p>Finally, the Afinn and Vader methods help predict the likelihood of a book getting a high score on goodreads.com. However once a book makes it to the Top 400 list and a high level of granularity is required to differentiate it from other successful books, the two methods are unreliable.</p>
 <h5 id="Below-is-a-quick-list-of-the-analyses-I-could-have,-would-have-and-should-have-done-if-given-more-time-and-data:">Below is a quick list of the analyses I could have, would have and should have done if given more time and data:<a class="anchor-link" href="#Below-is-a-quick-list-of-the-analyses-I-could-have,-would-have-and-should-have-done-if-given-more-time-and-data:">&#182;</a></h5><ul>
 <li><strong>More data about users writing reviews</strong>: I wish the reviews included demographics data on the people writing them to answer questions such as: are people from a specific city, a particular age group or sex more ruthless in their critique?</li>
 </ul>
 <ul>
-<li><strong> Working with unigrams vs. n-grams</strong>: The sentiment analysis is constructed with unigram features. This means that the entire text is split in single words, taking words out of their context and thus reducing the accuracy with which it detects the sentiment of reviews. The longer the n-gram (the higher the n), the more context you have to work with. I wish I had known about lexicons that are based on n-grams or the Syuzhet Package in R, which leads me to the next point.</li>
+<li><strong> Working with unigrams vs. n-grams</strong>: The sentiment analysis is constructed with unigram features. This means that the entire text is split in single words, taking words out of their context and thus reducing the accuracy with which it detects the sentiment of reviews. The longer the n-gram (the higher the n), the more context you have to work with. Using n-grams graphs and choosing a package like Textblob would have been a better choice. The Syuzhet Package in R would have been a better alternative too, which leads me to the next point.</li>
 </ul>
 <p><img src="n_gram.png"></p>
 
